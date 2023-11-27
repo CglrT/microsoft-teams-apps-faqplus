@@ -298,21 +298,21 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Common.Cards
             List<AdaptiveAction> actionsList = new List<AdaptiveAction>
             {
                 // Adds the "Ask an expert" button.
-                new AdaptiveSubmitAction
-                {
-                    Title = Strings.AskAnExpertButtonText,
-                    Data = new ResponseCardPayload
-                    {
-                        MsTeams = new CardAction
-                        {
-                            Type = ActionTypes.MessageBack,
-                            DisplayText = Strings.AskAnExpertDisplayText,
-                            Text = Constants.AskAnExpert,
-                        },
-                        UserQuestion = userQuestion,
-                        KnowledgeBaseAnswer = answer,
-                    },
-                },
+                //new AdaptiveSubmitAction
+                //{
+                //    Title = Strings.AskAnExpertButtonText,
+                //    Data = new ResponseCardPayload
+                //    {
+                //        MsTeams = new CardAction
+                //        {
+                //            Type = ActionTypes.MessageBack,
+                //            DisplayText = Strings.AskAnExpertDisplayText,
+                //            Text = Constants.AskAnExpert,
+                //        },
+                //        UserQuestion = userQuestion,
+                //        KnowledgeBaseAnswer = answer,
+                //    },
+                // },
 
                 // Adds the "Share feedback" button.
                 //new AdaptiveSubmitAction
