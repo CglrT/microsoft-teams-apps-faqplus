@@ -32,27 +32,27 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Common.Cards
                 {
                     new AdaptiveTextBlock
                     {
-                        Text = Strings.CustomMessage,
+                        Text = "Sorunuza cevap bulamadık",
                         Wrap = true,
                         HorizontalAlignment = textAlignment,
                     },
                 },
                 Actions = new List<AdaptiveAction>
                 {
-                    new AdaptiveSubmitAction
-                    {
-                        Title = Strings.AskAnExpertButtonText,
-                        Data = new ResponseCardPayload
-                        {
-                            MsTeams = new CardAction
-                            {
-                                Type = ActionTypes.MessageBack,
-                                DisplayText = Strings.AskAnExpertDisplayText,
-                                Text = Constants.AskAnExpert,
-                            },
-                            UserQuestion = userQuestion,
-                        },
-                    },
+                    //new AdaptiveSubmitAction
+                    //{
+                    //    Title = Strings.AskAnExpertButtonText,
+                    //    Data = new ResponseCardPayload
+                    //    {
+                    //        MsTeams = new CardAction
+                    //        {
+                    //            Type = ActionTypes.MessageBack,
+                    //            DisplayText = Strings.AskAnExpertDisplayText,
+                    //            Text = Constants.AskAnExpert,
+                    //        },
+                    //        UserQuestion = userQuestion,
+                    //    },
+                    //},
                 },
             };
 
